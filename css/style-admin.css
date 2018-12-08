@@ -1,0 +1,144 @@
+button.botonAgregarRespuesta,
+button.botonBorrarRespuesta {
+	display: inline-block;
+	border: 0;
+	background-color: #3A4043;
+	color: #FFF;
+	line-height: 1;
+	border-radius: 4px;
+	font-size: 12px;
+	padding: 15px 16px 13px 16px;
+}
+
+button .fa-plus {
+	margin-right: 10px;
+}
+
+#agregarPregunta {
+	background-color: #EA1D5E;
+}
+
+#agregarPregunta:hover {
+	background-color: #cc1952;
+}
+
+.botones {
+	text-align: center;
+	margin: 40px 0 60px;
+}
+
+.botones button {
+	border: 0;
+	outline: 0;
+	background-color: #EEE;
+	border-radius: 16px;
+	margin: 5px;
+	text-transform: uppercase;
+	padding: 8px 18px 8px 40px;
+	font-size: 11px;
+	position: relative;
+}
+
+.botones button:before {
+	content: '';
+	display: block;
+	left: 16px;
+	top: 6px;
+	position: absolute;
+}
+
+.botones button#editarPregunta:before {
+	width: 16px;
+	height: 18px;
+	background: url(../img/icon_btn_editar.png) no-repeat;
+	background-size: 16px 18px;
+}
+
+.botones button#borrarPregunta:before {
+	width: 19px;
+	height: 17px;
+	background: url(../img/icon_btn_borrar.png) no-repeat;
+	background-size: 19px 17px;
+}
+
+.botones button#borrarTodo:before {
+	width: 14px;
+	height: 17px;
+	background: url(../img/icon_btn_borrartodo.png) no-repeat;
+	background-size: 14px 17px;
+}
+
+.botones button:hover {
+	background-color: #DDD;
+}
+
+/*-----*/
+
+ul.list-group li {
+	margin-bottom: 15px;
+	background-color: #FFF;
+	border-radius: 4px;
+	padding: 30px 30px 30px 60px;
+	cursor: pointer;
+	transition: all .2s linear;
+	display: flex;
+	align-items: center;
+
+	-webkit-box-shadow: 0 5px 10px -10px black;
+	   -moz-box-shadow: 0 5px 10px -10px black;
+	        box-shadow: 0 5px 10px -10px black;
+}
+
+ul.list-group li:hover {
+	-webkit-box-shadow: 0 7px 10px -10px black;
+	   -moz-box-shadow: 0 7px 10px -10px black;
+	        box-shadow: 0 7px 10px -10px black;
+}
+
+ul.list-group li h5 {
+	font-size: 18px;
+	margin: 0 !important;
+	flex: 1 1 80%;
+	line-height: 1.4;
+}
+
+ul.list-group li h5:before {
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	width: 20px;
+	height: 20px;
+	background: url(../img/frm_radio_admin_off.png) no-repeat;
+	background-size: 20px 20px;
+	margin: 3px 10px 0 -30px;
+}
+
+ul.list-group li.active h5:before {
+	background: url(../img/frm_radio_admin_on.png) no-repeat;
+	background-size: 20px 20px;
+}
+
+ul.list-group li small {
+	font-size: 14px;
+	color: #999;
+	text-align: right;
+	margin-top: 4px;
+	max-width: 42%;
+}
+
+/*////////// RESPONSIVE ////////////*/
+
+@media only screen and (max-width: 1024px) {
+
+}	
+
+@media only screen and (max-width: 800px) {
+
+}	
+
+@media only screen and (max-width: 640px) {
+	
+}	
+
+
+

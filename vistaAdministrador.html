@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-admin.css">
+    <title>Encuestados</title>
+    <style type="text/css" src="css/index.css"></style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="administrador">
+        <li class="active"><a href="vistaAdministrador.html">Administrador</a></li>
+        <li><a href="vistaUsuario.html">Usuario</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2>Agrega y administra preguntas y sus respuestas</h2>
+
+      <form id="localStorageForm" method="post" class="form-horizontal">
+
+        <div class="form-box">
+
+          <div class="form-group">
+            <label class="ontrol-label">Pregunta</label>
+            <div>
+              <input id="pregunta" type="text" class="line-input" name="question" />
+            </div>
+          </div>
+
+          <div class="form-group" id="respuesta">
+            <label class="control-label">Respuestas</label>
+            <input type="text" class="form-control" name="option[]"/>
+          </div>
+
+          <!-- Template -->
+          <!-- <div class="form-group answer hide" id="optionTemplate">
+            <input class="form-control" type="text" name="option[]" />
+            <button type="button" class="btn btn-default botonBorrarRespuesta"><i class="fa fa-minus"></i></button>
+          </div>-->
+
+          <!-- Boton agregar -->
+          <button type="button" class="btn btn-default botonAgregarRespuesta" id="agregarRespuesta">
+            <i class="fa fa-plus"></i> Agregar respuesta
+          </button>
+
+        </div>
+
+        <button id="agregarPregunta" class="btn btn-default main-button"  type="reset">Crear pregunta</button>
+
+      </form>
+
+      <!-- Template li -->
+      <div class="d-flex w-100 justify-content-between hide">
+        <h5 class="mb-1"></h5>
+        <small></small>
+      </div>
+
+        <h4>Encuestas</h4>
+
+        <ul class="list-group" id="lista" size="20"></ul>
+
+        <div class="botones text-center">
+          <button id="editarPregunta">Editar</button>
+          <button id="borrarPregunta">Borrar</button>
+          <button id="borrarTodo">Borrar todo</button>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/listgroup.min.js"> </script>
+    <script type="text/javascript" src="js/lib/formValidation.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/evento.js"></script>
+    <script type="text/javascript" src="js/modelo/modelo.js"></script>
+    <script type="text/javascript" src="js/controlador/controlador.js"></script>
+    <script type="text/javascript" src="js/vistas/vistaUsuario.js"></script>
+    <script type="text/javascript" src="js/vistas/vistaAdministrador.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

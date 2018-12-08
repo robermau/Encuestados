@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-usuario.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" src="css/formValidation.css">
+    <!--Titulo de la pagina-->
+    <title>Encuestados</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="usuario">
+        <li><a href="vistaAdministrador.html">Administrador</a></li>
+        <li class="active"><a href="vistaUsuario.html">Usuario</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2>Votá las respuestas</h2>
+
+      <div class="form-box">
+        <div id="elecciones">
+          <!--Nombre del encuestado-->
+
+          <!--Respuesta del encuestado-->
+          <div class="form-group">
+            <label>Nombre</label>
+            <input id="nombreUsuario" class="line-input" type="text">
+          </div>
+
+          <!--Primer valor-->
+          <div id="preguntas"></div>
+        </div>
+      </div>
+
+      <button id="agregarBoton" class="main-button" name="agregar">Enviar respuestas</button>
+
+      <!--Gráfico-->
+      <h4>Resultados</h4>
+
+      <div id="graficosDeTorta"></div>
+    </div>
+
+    <!--Script para grafico-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/formValidation.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/evento.js"></script>
+    <script type="text/javascript" src="js/modelo/modelo.js"></script>
+    <script type="text/javascript" src="js/vistas/vistaUsuario.js"></script>
+    <script type="text/javascript" src="js/vistas/vistaAdministrador.js"></script>
+    <script type="text/javascript" src="js/controlador/controlador.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

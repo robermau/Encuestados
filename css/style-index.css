@@ -1,0 +1,81 @@
+/* Index */
+
+.index-cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+.index-cards > div {
+	flex: 0 0 50%;
+	box-sizing: border-box;
+	padding: 0 10px;
+	text-align: center;
+}
+
+.index-cards > div > div {
+	margin: 10px 0;
+	font-size: 14px;
+	margin-top: 26px;
+	line-height: 1.3;
+}
+
+.index-cards > div:first-child {
+	color: #EA1D5E;
+}
+
+.index-cards > div:last-child {
+	color: #1DB8C3;
+}
+
+.index-cards .card {
+	display: block;
+	padding: 60px 20px 40px;
+	color: #FFF;
+	background-color: #EA1D5E;
+	border-radius: 4px;
+	transition: all .1s ease-in-out;
+}
+.index-cards > div:last-child .card {
+	background-color: #1DB8C3;
+}
+
+.index-cards .card:hover {
+	transform: scale(1.025);
+}
+
+.index-cards .card .icon {
+	display: block;
+	height: 80px;
+	background-image: url(../img/icon_user.png);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto 50px;
+}
+
+.index-cards > div:last-child .card .icon {
+	background-size: auto 85%;
+	background-image: url(../img/icon_admin.png);
+}
+
+
+.index-cards .card .label {
+	display: block;
+	word-spacing: 100vw;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 640px) {
+
+	.index-cards > div {
+		flex: 1 1 100%;
+		margin: 20px;
+		padding: 0;
+	}
+}	
+
+
+
+

@@ -1,0 +1,236 @@
+/*--------- CUSTOM LAYOUT ---------*/
+
+@import url("normalize.css");
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/*------*/
+
+body {
+	background-color: #FAFBFB;
+	color: #3A4043;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/*------*/
+
+h1, h2, h3, h4, p {
+    margin:0;
+    padding: 0;
+    line-height: 1.1;
+    font-weight: normal;
+    position: relative;
+    font-size: inherit;
+}
+
+a {
+	text-decoration: none;
+    outline: 0;
+    color: #FFF;
+}
+
+button {
+	transition: all .1s linear;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+	width: 199px;
+	height: 43px;
+	background-image: url(../img/logo_encuestados.png);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 80px auto 50px;
+}
+
+.logo-acamica {
+	width: 103px;
+	height: 21px;
+	background-image: url(../img/logo_acamica.png);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 80px auto 40px;
+}
+
+nav {
+	padding: 40px 20px 0;
+	margin-bottom: 40px;
+	background-color: #fff;
+}
+
+nav .logo {
+	margin: 0 20px;
+}
+
+nav ul {
+	text-align: center;
+	line-height: 50px;
+	margin-top: 20px;
+}
+
+nav ul li {
+	display: inline-block;
+    font-size: 14px;
+}
+nav ul li a {
+	display: inline-block;
+	padding: 0 20px;
+    color: #3A4043;
+    // font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul.administrador li.active a {
+	color: #EA1D5E;
+    border-bottom: 3px solid #EA1D5E;
+}
+
+nav ul.usuario li.active a {
+	color: #1DB8C3;
+    border-bottom: 3px solid #1DB8C3;
+}
+
+h2 {
+	line-height: 1.4;
+}
+
+h4 {
+	margin: 40px 0 12px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+/*------*/
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.main-button {
+	display: block;
+	width: 100%;
+	padding: 16px 0;
+	background-color: #EA1D5E;
+	font-size: 14px;
+	color: #FFF;
+	border: 0;
+	outline: 0;
+	border-radius: 0 0 5px 5px;
+}
+
+label {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+form {
+	position: relative;
+}
+
+.form-box {
+	background-color: #fff;
+	padding: 40px 60px;
+	border-radius: 5px 5px 0 0;
+	margin-top: 30px;
+}
+
+.form-group label {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.form-group input {
+	font-size: 14px;
+	outline: 0;
+	border: 1px solid #DDD;
+	padding: 11px 12px;
+	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.form-group.answer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-group.answer > input {
+	flex: 1;
+}
+
+.form-group.answer > button {
+	flex: 0 0 40px;
+	margin-left: 10px;
+}
+
+.form-group {
+	margin-bottom: 14px;
+}
+
+.form-group.has-error input {
+	border-color: red !important;
+}
+
+.form-group small.help-block {
+	color: red;
+	font-size: 12px;
+	margin: 12px 0;
+}
+
+.form-group.answer small {
+	flex: 1 1 100%;
+}
+
+.hide {
+	display: none !important;
+}
+
+input.line-input {
+	font-size: 36px;
+	border: 0;
+	outline: 0;
+	background-color: transparent;
+	border-bottom: 1px solid #DDD;
+	width: 100%;
+	border-radius: 0;
+	position: static;
+	padding: 0 0 6px 0;
+}
+
+
+/*////////// RESPONSIVE ////////////*/
+
+@media only screen and (max-width: 1024px) {
+
+}	
+
+@media only screen and (max-width: 800px) {
+
+}	
+
+@media only screen and (max-width: 640px) {
+	.container {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.form-box {
+		padding: 20px;
+	}
+}
+
+
+
+
+
